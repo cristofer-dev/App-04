@@ -1,0 +1,52 @@
+.login {
+  display: grid;
+  align-items: center;
+  grid-column: 5/9;
+  grid-row: 2/3;
+  background-color: white;
+  height: 100%;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+}
+
+.title{
+  font-size: 30px;
+}
+.subtitle{
+  color: gray
+}
+input {
+  border: none;
+  background: none;
+  color: rgb(43, 219, 230);
+  border-bottom: 1px solid rgba(43, 219, 230, 0.8);
+  margin: 15px 0;
+}
+
+input:focus {
+  border-bottom: 2px solid rgb(43, 219, 230, 0.8);
+}
+
+input::placeholder {
+  color: rgb(43, 219, 230, 1);
+}
+
+button {
+  background-color: rgba(238, 143, 255, 0.8);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+}
+
+button:active {
+  background-color: rgba(238, 143, 255, 0.5);
+}
+
+@media (max-width: 600px) {
+  .login {
+    grid-column: 3/11;
+  }
+}
